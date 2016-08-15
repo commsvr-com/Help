@@ -8,8 +8,8 @@
     <ProjectGuid>{E1FC0810-38EB-4EFF-A015-BEAF031DD987}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Scripts</RootNamespace>
-    <AssemblyName>CAS.Scripts</AssemblyName>
+    <RootNamespace>CAS.MAML.Scripts</RootNamespace>
+    <AssemblyName>CAS.MAML.Scripts</AssemblyName>
     <StartupObject>
     </StartupObject>
     <FileUpgradeFlags>

@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SiteMapLibrary</RootNamespace>
-    <AssemblyName>SiteMapLibrary</AssemblyName>
+    <AssemblyName>CAS.MAML.SiteMap.Content</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SignAssembly>true</SignAssembly>

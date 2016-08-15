@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HelpAssistantDocumentation</RootNamespace>
-    <AssemblyName>HelpAssistantDocumentation</AssemblyName>
+    <AssemblyName>CAS.MAML.HelpAssistant.Documentation</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <StartupObject>

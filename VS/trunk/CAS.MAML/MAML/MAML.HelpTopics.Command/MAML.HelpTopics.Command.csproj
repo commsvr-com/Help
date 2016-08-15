@@ -5,15 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{8028D656-0229-46A7-9EDA-C10CDEBDE7D8}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{7E80AF18-FC7C-4067-AD9C-3034914B2CC5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HelpTopicsPlugin</RootNamespace>
-    <AssemblyName>HelpTopicsPlugin</AssemblyName>
+    <RootNamespace>HelpTopicsCommand</RootNamespace>
+    <AssemblyName>CAS.MAML.HelpTopics.Command</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -38,16 +36,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SandcastleBuilder.Utils, Version=1.9.1.0, Culture=neutral, PublicKeyToken=71c06e0a0c1c8bf2, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\SHFBLibraries\SandcastleBuilder.Utils.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -58,14 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PluginConfigProperty.cs" />
-    <Compile Include="HelpTopicsPlugin.cs" />
-    <Compile Include="PluginConfig.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PluginConfig.Designer.cs">
-      <DependentUpon>PluginConfig.cs</DependentUpon>
-    </Compile>
+    <Compile Include="HelpTopicsCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -75,30 +60,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="key.snk" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\HelpTopicsLibraries\HelpAssistant\HelpAssistant.csproj">
+    <ProjectReference Include="..\MAML.HelpAssistant\MAML.HelpAssistant.csproj">
       <Project>{F1314E3F-65F6-4024-A31F-ACD8CA75550E}</Project>
-      <Name>HelpAssistant</Name>
+      <Name>MAML.HelpAssistant</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SiteMapLibrary\SiteMapLibrary.csproj">
+    <ProjectReference Include="..\MAML.SiteMap.Content\MAML.SiteMap.Content.csproj">
       <Project>{57DA813F-65E2-4BD8-9603-AC30C1F24671}</Project>
-      <Name>SiteMapLibrary</Name>
+      <Name>MAML.SiteMap.Content</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TopicsLibrary\TopicsLibrary.csproj">
+    <ProjectReference Include="..\MAML.HelpTopics.Content\MAML.HelpTopics.Content.csproj">
       <Project>{8D532F2D-3F40-462A-917F-F7BFEC8B0ED0}</Project>
-      <Name>TopicsLibrary</Name>
+      <Name>MAML.HelpTopics.Content</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="PluginConfig.resx">
-      <DependentUpon>PluginConfig.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -108,15 +87,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  <PropertyGroup>
-    <PostBuildEvent>cd $(TargetDir)
-md Temp
-copy $(TargetName)$(TargetExt) Temp
-rename $(TargetName)$(TargetExt) $(TargetName).plugins
-cd Temp
-copy $(TargetName)$(TargetExt) $(TargetDir)
-del $(TargetName)$(TargetExt)
-cd $(TargetDir)
-rd /s /Q Temp</PostBuildEvent>
-  </PropertyGroup>
 </Project>
