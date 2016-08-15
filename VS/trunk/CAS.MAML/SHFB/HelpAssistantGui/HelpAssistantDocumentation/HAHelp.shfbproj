@@ -1,0 +1,222 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <!-- The configuration and platform will be used to determine which
+         assemblies to include from solution and project documentation
+         sources -->
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b73f481d-ca58-458e-a9fa-7181a120df4a}</ProjectGuid>
+    <SHFBSchemaVersion>1.8.0.0</SHFBSchemaVersion>
+    <!-- AssemblyName, Name, and RootNamespace are not used by SHFB but Visual
+         Studio adds them anyway -->
+    <AssemblyName>Documentation</AssemblyName>
+    <RootNamespace>Documentation</RootNamespace>
+    <Name>Documentation</Name>
+    <!-- SHFB properties -->
+    <OutputPath>.\Help\Output\</OutputPath>
+    <HtmlHelpName>HelpAssistant</HtmlHelpName>
+    <ComponentConfigurations>
+      <ComponentConfig id="Cached MSDN URL References" enabled="True">
+        <component id="Cached MSDN URL References" type="SandcastleBuilder.Components.CachedResolveReferenceLinksComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll" locale="{@Locale}" linkTarget="{@SdkLinkTarget}">
+          <cache filename="{@LocalDataFolder}Cache\MsdnUrl.cache" />
+          <targets base="{@SandcastlePath}Data\Reflection" recurse="true" files="*.xml" type="{@SDKLinks}" />
+          <targets files="reflection.xml" type="{@ProjectLinks}" />
+        </component>
+      </ComponentConfig>
+      <ComponentConfig id="Code Block Component" enabled="True">
+        <component id="Code Block Component" type="SandcastleBuilder.Components.CodeBlockComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+          <!-- Base path for relative filenames in source attributes
+                 (optional) -->
+          <basePath value="{@ProjectFolder}" />
+          <!-- Connect to language filter (optional).  If omitted,
+                 language filtering is enabled by default. -->
+          <languageFilter value="true" />
+          <!-- Allow missing source files (Optional).  If omitted,
+                 it will generate errors if referenced source files
+                 are missing. -->
+          <allowMissingSource value="false" />
+          <!-- Remove region markers from imported code blocks.  If omitted,
+                 region markers in imported code blocks are left alone. -->
+          <removeRegionMarkers value="false" />
+          <!-- Code colorizer options (required).
+                 Attributes:
+                    Language syntax configuration file (required)
+                    XSLT style file (required)
+                    "Copy" image file URL (required)
+                    Default language (optional)
+                    Enable line numbering (optional)
+                    Enable outlining (optional)
+                    Keep XML comment "see" tags within the code (optional)
+                    Tab size override (optional, 0 = Use syntax file setting)
+                    Use language name as default title (optional) -->
+          <colorizer syntaxFile="{@SHFBFolder}Colorizer\highlight.xml" styleFile="{@SHFBFolder}Colorizer\highlight.xsl" copyImageUrl="../icons/CopyCode.gif" language="cs" numberLines="false" outlining="false" keepSeeTags="false" tabSize="0" defaultTitle="true" />
+        </component>
+      </ComponentConfig>
+      <ComponentConfig id="Post-transform Component" enabled="True">
+        <component id="Post-transform Component" type="SandcastleBuilder.Components.PostTransformComponent" assembly="{@SHFBFolder}SandcastleBuilder.Components.dll">
+          <!-- Code colorizer files (required).
+                 Attributes:
+                    Stylesheet file (required)
+                    Script file (required)
+                    "Copy" image file (required) -->
+          <colorizer stylesheet="{@SHFBFolder}Colorizer\highlight.css" scriptFile="{@SHFBFolder}Colorizer\highlight.js" copyImage="{@SHFBFolder}Colorizer\CopyCode.gif" />
+          <!-- Base output path for the files (required).  This should match
+                 the parent folder of the output path of the HTML files (see
+                 SaveComponent). -->
+          <outputPath value="Output\" />
+          <!-- Logo image file (optional).  Filename is required. The height,
+                 width, altText, placement, and alignment attributes are
+                 optional. -->
+          <logoFile filename="C:\Users\Kuba\Desktop\Repozytorium\Doc\Documentation\EX02-MAML\SHFB\HelpAssistantGui\HelpAssistantDocumentation\Content.graphics\smallLogo.jpg" height="0" width="0" altText="" placement="left" alignment="left" />
+        </component>
+      </ComponentConfig>
+    </ComponentConfigurations>
+    <CopyrightHref>http://www.codeplex.com/HelpAssistant</CopyrightHref>
+    <CopyrightText>Copyright 2009, Jakub Budzynski, All rights reserved</CopyrightText>
+    <FeedbackEMailAddress>jkbudzynski%40gmail.com</FeedbackEMailAddress>
+    <FeedbackEMailLinkText>Jakub Budzynski</FeedbackEMailLinkText>
+    <FooterText>This documentation is designed to be used with HelpAssistant</FooterText>
+    <HeaderText>HelpAssistant</HeaderText>
+    <HelpTitle>HelpAssistant</HelpTitle>
+    <NamingMethod>MemberName</NamingMethod>
+    <WorkingPath>
+    </WorkingPath>
+    <PlugInConfigurations>
+      <PlugInConfig id="Additional Content Only" enabled="True">
+        <configuration />
+      </PlugInConfig>
+    </PlugInConfigurations>
+    <Preliminary>True</Preliminary>
+  </PropertyGroup>
+  <!-- There are no properties for these two groups but they need to appear in
+       order for Visual Studio to perform the build. -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Content.graphics\" />
+    <Folder Include="Content.maml\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ContentLayout Include="HAHelp.content" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content.maml\UserInterface.aml" />
+    <None Include="Content.maml\MenuToolbar.aml" />
+    <None Include="Content.maml\AnalyzeOfTheProject.aml" />
+    <None Include="Content.maml\CreatingOfTheExternalLink.aml" />
+    <None Include="Content.maml\WelcomeToHelpAssistant.aml" />
+    <None Include="Content.maml\StartingTheApplication.aml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Content.graphics\topic.jpg">
+      <ImageId>42E37596-3402-48c8-BA43-8469CA01523C</ImageId>
+      <AlternateText>Create topic link</AlternateText>
+    </Image>
+    <Image Include="Content.graphics\token.jpg">
+      <AlternateText>Create token link</AlternateText>
+      <ImageId>70A5A3A4-6336-4ff1-A338-F64E6F2CC59D</ImageId>
+    </Image>
+    <Image Include="Content.graphics\ProjectReloaded.jpg">
+      <AlternateText>Project refreshed</AlternateText>
+      <ImageId>FE9E17D6-1915-4864-972E-EF33C97475A9</ImageId>
+    </Image>
+    <Image Include="Content.graphics\OpenedProject.jpg">
+      <AlternateText>Opened project</AlternateText>
+      <ImageId>3D78AE01-C706-409b-AD52-C20FB5049709</ImageId>
+    </Image>
+    <Image Include="Content.graphics\OpenDialog.jpg">
+      <AlternateText>Open file dialog</AlternateText>
+      <ImageId>892F3C10-2300-41ba-A557-4253F3C2868C</ImageId>
+    </Image>
+    <Image Include="Content.graphics\mainWindow.jpg">
+      <AlternateText>Main window</AlternateText>
+      <ImageId>69068E75-3086-4c33-B054-4FFCC92BE6AB</ImageId>
+    </Image>
+    <Image Include="Content.graphics\logo.jpg">
+      <AlternateText>Logo</AlternateText>
+      <ImageId>0C9512E4-F88F-459b-982B-B46FF063ED29</ImageId>
+    </Image>
+    <Image Include="Content.graphics\InfoDialog.jpg">
+      <AlternateText>Info dialog</AlternateText>
+      <ImageId>551DE609-28BC-4d53-940A-A905F990CF5E</ImageId>
+    </Image>
+    <Image Include="Content.graphics\IncorrectFile.jpg">
+      <AlternateText>Incorrect file</AlternateText>
+      <ImageId>000C6591-A7A2-433e-AA74-8445C22D127C</ImageId>
+    </Image>
+    <Image Include="Content.graphics\image.jpg">
+      <AlternateText>Image</AlternateText>
+      <ImageId>5345FE8F-1D20-4117-B498-DBC2BD176EC2</ImageId>
+    </Image>
+    <Image Include="Content.graphics\HelpMenu.jpg">
+      <AlternateText>Help menu</AlternateText>
+      <ImageId>79B4866F-7A31-4c72-9665-15CBBB511657</ImageId>
+    </Image>
+    <Image Include="Content.graphics\GuidDoubled.jpg">
+      <AlternateText>GUID doubled</AlternateText>
+      <ImageId>E9BFE52D-2471-4cdd-A2AD-CC923C3D23B9</ImageId>
+    </Image>
+    <Image Include="Content.graphics\FormattedLink.jpg">
+      <AlternateText>Formatted link</AlternateText>
+      <ImageId>07ECC999-3BD2-4bf3-BC20-6909D1CE3768</ImageId>
+    </Image>
+    <Image Include="Content.graphics\FileMenu.jpg">
+      <AlternateText>File menu</AlternateText>
+      <ImageId>9198D4A4-D465-47a9-B262-BA2D856A8FE2</ImageId>
+    </Image>
+    <Image Include="Content.graphics\ExternalLinkNotCopied.jpg">
+      <AlternateText>Link not copied</AlternateText>
+      <ImageId>E3119EF7-9C78-4659-843D-FF27E4370AD8</ImageId>
+    </Image>
+    <Image Include="Content.graphics\ExternalLinkEmptyField.jpg">
+      <AlternateText>Empty field</AlternateText>
+      <ImageId>FD1DCD48-7F4A-42a7-BF64-CF7EE5B552A9</ImageId>
+    </Image>
+    <Image Include="Content.graphics\ExternalLinkCopied.jpg">
+      <AlternateText>Copied link</AlternateText>
+      <ImageId>6A8527C8-C743-402f-BE4D-C8BAA69AD2BD</ImageId>
+    </Image>
+    <Image Include="Content.graphics\ExternalLinkClear.jpg">
+      <AlternateText>Clear</AlternateText>
+      <ImageId>030BC4B4-A5A7-4b54-BD12-76E11B7634A4</ImageId>
+    </Image>
+    <Image Include="Content.graphics\ExternalLinkFromFile.jpg">
+      <AlternateText>External link</AlternateText>
+      <ImageId>FCF04A38-3F54-435e-BA17-403A82739231</ImageId>
+    </Image>
+    <Image Include="Content.graphics\DeserializationFailed.jpg">
+      <ImageId>80075E6D-C3A5-4538-B6EF-42AABCC6E4B4</ImageId>
+      <AlternateText>Deserialization failed</AlternateText>
+    </Image>
+    <Image Include="Content.graphics\CreateExternalLink.jpg">
+      <ImageId>E5B0863C-FEBD-48e5-9ED5-33E2125C9C77</ImageId>
+      <AlternateText>Create external link</AlternateText>
+    </Image>
+    <Image Include="Content.graphics\codeentity.jpg">
+      <AlternateText>Code entity link</AlternateText>
+      <ImageId>A351ED25-4E28-4629-B865-D495BDBDB244</ImageId>
+    </Image>
+    <Image Include="Content.graphics\anchor.jpg">
+      <ImageId>76F49235-80DA-4986-864E-21E431C06E07</ImageId>
+      <AlternateText>Topic with anchor link</AlternateText>
+    </Image>
+    <Image Include="Content.graphics\about.jpg">
+      <ImageId>35B55749-5DD1-492d-AF33-58C3EEDBC374</ImageId>
+      <AlternateText>AboutBox</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Content.graphics\helpFile.jpg">
+      <ImageId>8F71966B-E563-4651-A861-7484624CC32C</ImageId>
+      <AlternateText>Help file</AlternateText>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Tokens Include="HAHelpTokens.tokens" />
+  </ItemGroup>
+  <!-- Import the SHFB build targets -->
+  <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
+</Project>

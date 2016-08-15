@@ -1,0 +1,125 @@
+﻿<!--
+ =============================================================================
+ System  : HelpAssistantGui
+ File    : WindowHelpAssistantGui.xaml
+ Author  : Jakub Budzynski (jkbudzynski@gmail.com)
+ Updated : 17/04/2009
+ Note    : Copyright 2009, code developed at Technical University of Lodz, Poland 
+           by Jakub Budzynski, All rights reserved
+ This file contains GUI controls.
+
+ This code is published under the Microsoft Public License (Ms-PL).  A copy
+ of the license should be distributed with the code.  It can also be found
+ at the project website: http://www.codeplex.com/HelpAssistant. This notice, the
+ author's name, and all copyright notices must remain intact in all
+ applications, documentation, and source files.
+=============================================================================
+    -->
+<Window x:Class="HelpAssistantGui.HelpAssistantWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="HelpAssistant" Height="600" Width="900" Background="GhostWhite" MaxHeight="600" MaxWidth="900" MinHeight="0" MinWidth="0" Icon="/HelpAssistantGui;component/Resources/HAicon.png">
+    <WrapPanel Height="566.61" Name="wrapPanelMainPanel" Width="875.468" ClipToBounds="True">
+        <Menu Height="22.22" Name="menu" Width="625.493">
+            <MenuItem Header="File" Name="File">
+                <MenuItem Header="Open project" Name="OpenProject" Click="OpenProject_Click">
+                    <MenuItem.Icon>
+                        <Image Height="16" Width="16" Source="Resources/open.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Refresh" Name="Refresh" Click="Refresh_Click">
+                    <MenuItem.Icon>
+                        <Image Height="16" Width="16" Source="Resources/refresh.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="Exit" Name="Exit" Click="Exit_Click">
+                    <MenuItem.Icon>
+                        <Image Height="16" Width="16" Source="Resources/exit.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem Header="Help" Name="Help" Click="Help_Click">
+                    <MenuItem.Icon>
+                        <Image Height="16" Width="16" Source="Resources/help.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="About" Name="About" Click="About_Click">
+                    <MenuItem.Icon>
+                        <Image Height="16" Width="16" Source="Resources/about.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <CheckBox Height="18.887" Name="checkBoxFormat" Width="119.988">Formatted link</CheckBox>
+        <TabControl Height="532.39" Name="tabControlPanels" Width="875.468">
+            <TabItem Header="Create link" Name="tabItemCreateLink">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="325.522*"/>
+                        <ColumnDefinition Width="5*" MinWidth="5" />
+                        <ColumnDefinition Width="534.925*"/>
+                    </Grid.ColumnDefinitions>
+                    <TreeView Margin="6,6,6.152,10.554" Name="treeViewTree" SelectedItemChanged="treeViewTree_SelectedItemChanged" />
+                    <GridSplitter HorizontalAlignment="Right" 
+                  VerticalAlignment="Stretch" 
+                  Grid.Column="1" ResizeBehavior="PreviousAndNext"
+                  Width="5" Background="#FFBCBCBC"/>
+                    <TextBox Margin="22,0,13.332,8.888" Name="textBoxLink" Visibility="Hidden" FontSize="10" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Height="77" VerticalAlignment="Bottom" Grid.Column="2"/>
+                    <Label FontWeight="Bold" Margin="6,6,0,0" Name="labelType" Visibility="Hidden" Height="27.775" VerticalAlignment="Top" Grid.Column="2" HorizontalAlignment="Left" Width="103">Element type :</Label>
+                    <Label Margin="109.388,6,0,0" Name="labelTypeValue" Height="27.775" VerticalAlignment="Top" Grid.Column="2" />
+                    <WrapPanel Name="wrapPanelImage" Visibility="Collapsed" FlowDirection="LeftToRight" Margin="6,39.6,23.6,214" Grid.Column="2">
+                        <Label FontWeight="Bold" Height="27.775" Name="labelImageGuid" Width="500.413" FlowDirection="LeftToRight" Opacity="1">GUID :</Label>
+                        <Label Height="27.775" Name="labelImageGuidValue" Width="506.413" HorizontalContentAlignment="Stretch" HorizontalAlignment="Left" VerticalContentAlignment="Stretch" ClipToBounds="False" FlowDirection="LeftToRight" Padding="5" Opacity="1" IsTabStop="False" Margin="0" FontSize="11" />
+                        <Label FontWeight="Bold" Height="27.775" Name="labelImageAlternateText" Width="506.413" FlowDirection="LeftToRight">Alternate text :</Label>
+                        <Label Height="27.775" Name="labelImageAlternateTextValue" Width="500.413" FlowDirection="LeftToRight" FontSize="11" />
+                        <Label Height="27.775" Name="labelImagePreview" Width="471.991" FlowDirection="LeftToRight" FontWeight="Bold">Preview</Label>
+                        <Image Name="imagePreview" Stretch="Fill" StretchDirection="Both" HorizontalAlignment="Left" Margin="8" Height="141" Width="240" VerticalAlignment="Stretch" ClipToBounds="True" MaxHeight="141" MaxWidth="240" Grid.IsSharedSizeScope="True" IsEnabled="True" />
+                    </WrapPanel>
+                    <WrapPanel Name="wrapPanelExternalLink" FlowDirection="LeftToRight" Visibility="Collapsed" Margin="5,38.75,5,206.25" Grid.Column="2">
+                        <Label Height="28" Name="labelExternalLinkLinkText" Width="513.947" FlowDirection="LeftToRight" FontWeight="Bold" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch">Link text :</Label>
+                        <Label Height="28" Name="labelExternalLinkLinkTextValue" Width="500.839" FlowDirection="LeftToRight" HorizontalContentAlignment="Stretch"></Label>
+                        <Label Height="28" Name="labelExternalLinkAlternateText" Width="513.947" FlowDirection="LeftToRight" FontWeight="Bold" HorizontalContentAlignment="Stretch">Alternate text :</Label>
+                        <Label Height="28" Name="labelExternalLinkAlternateTextValue" Width="500.839" FlowDirection="LeftToRight" HorizontalContentAlignment="Stretch"></Label>
+                        <Label Height="28" Name="labelExternalLinkUri" Width="511.051" FlowDirection="LeftToRight" FontWeight="Bold" HorizontalContentAlignment="Stretch">URI :</Label>
+                        <Label Height="28" Name="labelExternalLinkUriValue" Width="500.839" FlowDirection="LeftToRight"></Label>
+                    </WrapPanel>
+                    <Label Margin="6,0,0,101" Name="labelLink" FontWeight="Bold" Height="24" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="84.436" Visibility="Collapsed"  Grid.Column="2">Link :</Label>
+                    <WrapPanel Name="wrapPanelCodeEntity" Visibility="Collapsed" FlowDirection="LeftToRight" Margin="6,40,12.4,112.8" Grid.Column="2">
+                        <Label Height="27.775" Name="labelCodeEntityName" Width="511.496" FontWeight="Bold" FlowDirection="LeftToRight">Name :</Label>
+                        <Label Height="27.775" Name="labelCodeEntityNameValue" Width="516.412" FlowDirection="LeftToRight" FontSize="11" />
+                        <Label Height="27.775" Name="labelCodeEntitySummary" Width="511.496" FlowDirection="LeftToRight" FontWeight="Bold">Summary :</Label>
+                        <TextBox Height="240" Name="textBoxCodeEntitySummaryValue" Width="493.284" Margin="8" FlowDirection="LeftToRight" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" TextWrapping="Wrap" />
+                    </WrapPanel>
+                    <WrapPanel FlowDirection="LeftToRight" Margin="6,40,-0.4,145.2" Name="wrapPanelToken" Visibility="Collapsed" Grid.Column="2">
+                        <Label FlowDirection="LeftToRight" FontWeight="Bold" Name="labelTokenId" Width="513.947">Token ID :</Label>
+                        <Label FlowDirection="LeftToRight" FontSize="11" Height="27.775" Name="labelTokenIdValue" Width="529.138" />
+                        <Label FlowDirection="LeftToRight" FontWeight="Bold" Height="27.775" Name="labelTokenFullName" Width="529.138">Full name :</Label>
+                        <Label FlowDirection="LeftToRight" FontSize="11" Height="27.775" Name="labelTokenFullNameValue" Width="474.397" />
+                    </WrapPanel>
+                    <WrapPanel Name="wrapPanelTopic" FlowDirection="LeftToRight" Visibility="Collapsed" Margin="6,40,10.4,0" Grid.Column="2" Height="196.824" VerticalAlignment="Top">
+                        <Label Height="27.775" Name="labelTopicGuid" Width="518.836" FlowDirection="LeftToRight" FontWeight="Bold">GUID :</Label>
+                        <Label Height="27.775" Name="labelTopicGuidValue" Width="518.582" FlowDirection="LeftToRight"></Label>
+                        <Label Height="27.775" Name="labelTopicTitle" Width="518.836" FlowDirection="LeftToRight" FontWeight="Bold">Title :</Label>
+                        <Label Height="27.775" Name="labelTopicTitleValue" Width="501.284" FlowDirection="LeftToRight"></Label>
+                        <Label Height="27.775" Name="labelTopicAnchor" Width="518.836" FlowDirection="LeftToRight" FontWeight="Bold" Visibility="Hidden">Anchor :</Label>
+                        <Label Height="27.775" Name="labelTopicAnchorValue" Width="518.836" Visibility="Hidden" FlowDirection="LeftToRight"></Label>
+                    </WrapPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Create external link" Name="tabItemCreateExternalLink">
+                <Grid>
+                    <Label FontSize="13" FontWeight="Normal" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="8.75,25,0,0" Name="labelCreateExternalLink" VerticalAlignment="Top" Width="120">External link data</Label>
+                    <Label Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="27.5,77.5,0,0" Name="labelLinkText" VerticalAlignment="Top" Width="120">Link text :</Label>
+                    <TextBox Grid.Column="1" Height="23" Margin="152.5,81.25,31.25,0" Name="textBoxLinkText" VerticalAlignment="Top" />
+                    <Label Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="27.5,122.5,0,0" Name="labelLinkAlternateText" VerticalAlignment="Top" Width="120">Link alternate text :</Label>
+                    <TextBox Grid.Column="1" Height="26.25" Margin="153,122.5,31.25,0" Name="textBoxLinkAlternateText" VerticalAlignment="Top" />
+                    <Label Grid.Column="1" Height="27.79" HorizontalAlignment="Left" Margin="27.5,170,0,0" Name="labelUri" VerticalAlignment="Top" Width="120">URI :</Label>
+                    <TextBox Grid.Column="1" Height="22.79" Margin="153.75,172.5,31.25,0" Name="textBoxUri" VerticalAlignment="Top" />
+                    <Button Click="buttonCreateExternalLink_Click" Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="152.5,0,0,100" Name="buttonCreateExternalLink" VerticalAlignment="Bottom" Width="75">Create</Button>
+                    <Button Click="buttonClear_Click" Grid.Column="1" Height="23" HorizontalAlignment="Right" Margin="0,0,206.25,100" Name="buttonClear" VerticalAlignment="Bottom" Width="75">Clear</Button>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </WrapPanel>
+</Window>

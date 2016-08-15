@@ -1,0 +1,4 @@
+#####################################################################
+# HelpAssistant rel_1_00_00 (codename: First release)
+#####################################################################
+Initial release. All issues defined for this project are in ITR in Administration (category SHFBHelper)

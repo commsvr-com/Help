@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema attributeFormDefault="unqualified" elementFormDefault="qualified" 
+           xmlns="http://www.w3.org/2001/XMLSchema" 
+           targetNamespace="http://cas.eu/2009/HelpContent.xsd"
+           xmlns:cas="http://cas.eu/2009/HelpContent.xsd">
+
+  <element type="cas:Topics" name="Topics"/>
+
+  <complexType name="TopicNode">
+    <attribute name="Url" type="string" use="required" />
+    <attribute name="Title" type="string" use="required" />
+  </complexType>
+
+  <complexType name="Topics">
+    <sequence>
+      <element maxOccurs="unbounded" type="cas:TopicNode" name="TopicNode"/>
+    </sequence>
+  </complexType>
+</schema>

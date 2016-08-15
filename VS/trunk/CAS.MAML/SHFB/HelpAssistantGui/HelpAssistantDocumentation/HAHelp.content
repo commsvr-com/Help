@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Topics defaultTopic="d2c653b6-334c-4ec7-a48f-dbe505121a48">
+  <Topic id="d2c653b6-334c-4ec7-a48f-dbe505121a48" visible="True" title="Welcome to HelpAssistant" tocTitle="Welcome to HelpAssistant" linkText="Welcome to HelpAssistant" />
+  <Topic id="3914f079-dba8-4d77-a3b8-011f480d3164" visible="True" title="User interface" tocTitle="User interface" linkText="User interface">
+    <Topic id="c2b18898-5664-4d7b-8159-ff3bbdc25dc0" visible="True" title="Menu toolbar" tocTitle="Menu toolbar" linkText="Menu toolbar" />
+    <Topic id="0990c311-5843-437e-95c8-8189a95dfa98" visible="True" title="Analyze of the project" tocTitle="Analyze of the project" linkText="Analyze of the project" />
+    <Topic id="dc759063-b846-4afd-b4af-7838e2a61336" visible="True" title="Creating of the external link" tocTitle="Creating of the external link" linkText="Creating of the external link" />
+    <Topic id="fdc5e656-6c76-46e8-b739-e164d4b1b22f" visible="True" title="Starting the application" tocTitle="Starting the application" linkText="Starting the application" />
+  </Topic>
+</Topics>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema targetNamespace="http://schemas.microsoft.com/developer/msbuild/2003"
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003"
+xmlns:msdata="urn:schemas-microsoft-com:xml-msdata"
+elementFormDefault="qualified">
+
+  <!-- =================== IMPORT COMMON SCHEMA =========================== -->
+  <xs:include schemaLocation="Microsoft.Build.CommonTypes.xsd"/>
+  <xs:element name="HtmlHelp1xCompilerPath" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="HtmlHelp2xCompilerPath" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="HtmlHelpName" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="MissingTags" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="SHFBSchemaVersion" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="ProjectSummary" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="Name" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="SandcastlePath" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="VisibleItems" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="WorkingPath" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="BuildLogFile" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="HelpFileFormat" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="FrameworkVersion" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="Preliminary" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="HelpTitle" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="CopyrightHref" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="CopyrightText" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="FeedbackEMailAddress" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="FeedbackEMailLinkText" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="HeaderText" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="FooterText" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="PresentationStyle" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="NamingMethod" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+  <xs:element name="HelpFileVersion" type="msb:StringPropertyType" substitutionGroup="msb:Property"/>
+
+
+  <xs:element name="ComponentConfigurations" substitutionGroup="msb:Property">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ComponentConfig" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="component" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="basePath" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="value" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="languageFilter" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="value" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="colorizer" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="syntaxFile" type="xs:string" />
+                        <xs:attribute name="styleFile" type="xs:string" />
+                        <xs:attribute name="copyImageUrl" type="xs:string" />
+                        <xs:attribute name="language" type="xs:string" />
+                        <xs:attribute name="numberLines" type="xs:string" />
+                        <xs:attribute name="outlining" type="xs:string" />
+                        <xs:attribute name="keepSeeTags" type="xs:string" />
+                        <xs:attribute name="tabSize" type="xs:string" />
+                        <xs:attribute name="defaultTitle" type="xs:string" />
+                        <xs:attribute name="stylesheet" type="xs:string" />
+                        <xs:attribute name="scriptFile" type="xs:string" />
+                        <xs:attribute name="copyImage" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="outputPath" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="value" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="logoFile" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="filename" type="xs:string" />
+                        <xs:attribute name="height" type="xs:string" />
+                        <xs:attribute name="width" type="xs:string" />
+                        <xs:attribute name="altText" type="xs:string" />
+                        <xs:attribute name="placement" type="xs:string" />
+                        <xs:attribute name="alignment" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="cache" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="filename" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="targets" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="base" type="xs:string" />
+                        <xs:attribute name="recurse" type="xs:string" />
+                        <xs:attribute name="files" type="xs:string" />
+                        <xs:attribute name="type" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="id" type="xs:string" />
+                  <xs:attribute name="type" type="xs:string" />
+                  <xs:attribute name="assembly" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" />
+            <xs:attribute name="enabled" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+  <xs:element name="DocumentationSources" substitutionGroup="msb:Property">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="DocumentationSource" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="sourceFile" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+  <xs:element name="NamespaceSummaries" substitutionGroup="msb:Property">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NamespaceSummaryItem" nillable="true" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:simpleContent msdata:ColumnName="NamespaceSummaryItem_Text" msdata:Ordinal="2">
+              <xs:extension base="xs:string">
+                <xs:attribute name="name" type="xs:string" />
+                <xs:attribute name="isDocumented" type="xs:string" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+
+  <xs:element name="CppCommentsFixup" type="msb:boolean" substitutionGroup="msb:Property"/>
+
+
+  <xs:element name="PlugInConfigurations" substitutionGroup="msb:Property">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PlugInConfig" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="configuration" type="xs:anyType" minOccurs="0" msdata:Ordinal="0" />
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" />
+            <xs:attribute name="enabled" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Folder" type="msb:SimpleItemType" substitutionGroup="msb:Item"/>
+
+  <xs:element name="None" substitutionGroup="msb:Item">
+    <xs:annotation>
+      <xs:documentation>
+        <!--_locID_text="None" _locComment=""-->
+        Files that should have no role in the build process
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="msb:SimpleItemType">
+          <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:choice>
+              <xs:element name="DependentUpon"/>
+              <xs:element name="Generator">
+                <xs:annotation>
+                  <xs:documentation>
+                    <!--_locID_text="None_Generator" _locComment=""-->
+                    Name of any file generator that is run on this item
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="LastGenOutput"/>
+              <xs:element name="CustomToolNamespace"/>
+              <xs:element name="Link">
+                <xs:annotation>
+                  <xs:documentation>
+                    <!--_locID_text="None_Link" _locComment=""-->
+                    Notional path within project to display if the file is physically located outside of the project file's cone (optional)
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="Visible">
+                <xs:annotation>
+                  <xs:documentation>
+                    <!--_locID_text="None_InProject" _locComment=""-->
+                    Display in user interface (optional, boolean)
+                  </xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element name="CopyToOutputDirectory"/>
+            </xs:choice>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+
+
+  <xs:element name="Image" substitutionGroup="msb:Item">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="msb:SimpleItemType">
+          <xs:sequence>
+            <xs:element name="ImageId" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+            <xs:element name="AlternateText" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+
+
+  <xs:element name="ContentLayout" type="msb:SimpleItemType" substitutionGroup="msb:Item"/>
+  <xs:element name="Tokens" type="msb:SimpleItemType" substitutionGroup="msb:Item"/>
+
+  <xs:element name="Reference" substitutionGroup="msb:Item">
+    <xs:complexType>
+      <xs:complexContent>
+        <xs:extension base="msb:SimpleItemType">
+          <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="HintPath" type="xs:string"/>
+          </xs:sequence>
+        </xs:extension>
+      </xs:complexContent>
+    </xs:complexType>
+  </xs:element>
+
+
+</xs:schema>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45329FE0-9593-46D3-82C2-4AC9D18C7AD9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Schemas2</RootNamespace>
+    <AssemblyName>Schemas2</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <None Include="Authoring\base.xsd" />
+    <None Include="Authoring\baseConditional.xsd" />
+    <None Include="Authoring\block.xsd" />
+    <None Include="Authoring\blockCommon.xsd" />
+    <None Include="Authoring\blockSoftware.xsd" />
+    <None Include="Authoring\conditionSet.xsd" />
+    <None Include="Authoring\developer.xsd" />
+    <None Include="Authoring\developerReference.xsd" />
+    <None Include="Authoring\developerStructure.xsd" />
+    <None Include="Authoring\glossary.xsd" />
+    <None Include="Authoring\hierarchy.xsd" />
+    <None Include="Authoring\inline.xsd" />
+    <None Include="Authoring\inlineCommon.xsd" />
+    <None Include="Authoring\inlineLinking.xsd" />
+    <None Include="Authoring\inlineSoftware.xsd" />
+    <None Include="Authoring\inlineUi.xsd" />
+    <None Include="Authoring\space.xsd" />
+    <None Include="Authoring\standardCodes.xsd" />
+    <None Include="Authoring\structure.xsd" />
+    <None Include="Authoring\structureList.xsd" />
+    <None Include="Authoring\structureMedia.xsd" />
+    <None Include="Authoring\structureProcedure.xsd" />
+    <None Include="Authoring\structureTable.xsd" />
+    <None Include="Authoring\xlink.xsd" />
+    <None Include="Authoring\__internal.xsd" />
+  </ItemGroup>
+</Project>

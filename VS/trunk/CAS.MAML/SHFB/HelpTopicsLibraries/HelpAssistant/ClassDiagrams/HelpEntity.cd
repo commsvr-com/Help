@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HelpAssistant.HelpEntity" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>HelpEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HelpAssistant.HelpElementTypes.CodeEntity" Collapsed="true">
+    <Position X="4.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAABAAAAAAAAAAAAQAAAAEAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Types\HelpElementTypes\CodeEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HelpAssistant.HelpElementTypes.ExternalLink" Collapsed="true">
+    <Position X="6.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAFAAAABQAEAEAAAABAAAA=</HashCode>
+      <FileName>Types\HelpElementTypes\ExternalLink.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HelpAssistant.HelpElementTypes.Image" Collapsed="true">
+    <Position X="8.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAEAAAARAAEAEBAAAAAAAA=</HashCode>
+      <FileName>Types\HelpElementTypes\Image.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HelpAssistant.HelpElementTypes.Token" Collapsed="true">
+    <Position X="11" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAgAAAAIAAAAAAAAAAAAEAAAAABAAAAA=</HashCode>
+      <FileName>Types\HelpElementTypes\Token.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HelpAssistant.HelpElementTypes.Topic" Collapsed="true">
+    <Position X="13.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAACAIAAAgAAAAAAAAAAAAAAEgAAAAIAAAAA=</HashCode>
+      <FileName>Types\HelpElementTypes\Topic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

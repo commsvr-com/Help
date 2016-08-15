@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="0990c311-5843-437e-95c8-8189a95dfa98" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <introduction>
+      <para></para>
+    </introduction>
+
+    <section address="After_opening">
+      <title>Main window with the project</title>
+      <content>
+        <para>After choosing the correct project file and clicking button “Open” (1) on “Open file” dialog, the project is being opened:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure">Opening of the project</caption>
+          <image placement="center" xlink:href = "3d78ae01-c706-409b-ad52-c20fb5049709"/>
+        </mediaLink>
+        <para>Controls in the main window after opening the project:</para>
+        <list class="ordered">
+          <listItem>
+            <para>
+              Categories of elements which are the content of the <token>SHFB</token> project.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+
+
+    <section address="Analyze_of_the_project">
+      <title>Analyze</title>
+      <content>
+        <para>
+          In the next step user can choose an element (image, code entity, token, external link or topic) from <token>SHFB</token> project file. After clicking with the left mouse button on the tree element, information about element appears on the right panel and the link is copied to the system clipboard. Below are effects of choosing sample elements of each type:
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>Image:</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure">Create image link</caption>
+              <image placement="center" xlink:href = "5345fe8f-1d20-4117-b498-dbc2bd176ec2"/>
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para>Token:</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure">Create token link</caption>
+              <image placement="center" xlink:href = "70a5a3a4-6336-4ff1-a338-f64e6f2cc59d"/>
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para>Code entity:</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure">Code entity link</caption>
+              <image placement="center" xlink:href = "a351ed25-4e28-4629-b865-d495bdbdb244"/>
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para>Topic:</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure">Create topic link</caption>
+              <image placement="center" xlink:href = "42e37596-3402-48c8-ba43-8469ca01523c"/>
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para>Topic with anchor:</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure">Topic with anchor link</caption>
+              <image placement="center" xlink:href = "76f49235-80da-4986-864e-21e431c06e07"/>
+            </mediaLink>
+          </listItem>
+          <listItem>
+            <para>External link:</para>
+            <mediaLink>
+              <caption placement="after" lead="Figure">External link</caption>
+              <image placement="center" xlink:href = "fcf04a38-3f54-435e-ba17-403a82739231"/>
+            </mediaLink>
+          </listItem>
+        </list>
+      </content>
+    </section>
+
+    <section address="First_opening">
+      <title>First creating of the link</title>
+      <content>
+        <para>
+          During the first start of the <token>app</token>, after clicking any element of the help, the information dialog appears:
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure">Info dialog</caption>
+          <image placement="center" xlink:href = "551de609-28bc-4d53-940a-a905f990cf5e"/>
+        </mediaLink>
+        <para>Controls in the dialog box:</para>
+        <list class="ordered">
+          <listItem>
+            <para>
+              Checkbox. If it is checked, and the “OK” button is pushed, the dialog will never appear again.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              “Cancel” button closes the dialog, but the dialog will appear every time user clicks on the tree.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              “OK” button confirms user choice of not showing the dialog again (if the checkbox id checked).
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+
+    <section address="Formatting">
+      <title>Formatting of the link</title>
+      <content>
+        <para>Every link can be copied to system clipboard in formatted or unformatted form. If the checkbox in the main window (3) is checked, then the link is formatted like below:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure">Formatted link</caption>
+          <image placement="center" xlink:href = "07ecc999-3bd2-4bf3-bc20-6909d1ce3768"/>
+        </mediaLink>
+      </content>
+    </section>
+
+    <section address="Refresh_info">
+      <title>Refresh</title>
+      <content>
+        <para>If the project is loaded, there is a possibility to refresh it (in case it has changed). To refresh the project the “Refresh” button from menu should be pushed. As a result this message box appears:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure">Project refreshed</caption>
+          <image placement="center" xlink:href = "fe9e17d6-1915-4864-972e-ef33c97475a9"/>
+        </mediaLink>
+      </content>
+    </section>
+    
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
