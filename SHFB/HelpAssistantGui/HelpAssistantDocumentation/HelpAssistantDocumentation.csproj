@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E7B51B22-2E47-4574-9EEE-CC3F1BE4567D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HelpAssistantDocumentation</RootNamespace>
+    <AssemblyName>HelpAssistantDocumentation</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Content Include="Content.maml\AnalyzeOfTheProject.aml" />
+    <Content Include="Content.maml\CreatingOfTheExternalLink.aml" />
+    <Content Include="Content.maml\MenuToolbar.aml" />
+    <Content Include="Content.maml\StartingTheApplication.aml" />
+    <Content Include="Content.maml\UserInterface.aml" />
+    <Content Include="Content.maml\WelcomeToHelpAssistant.aml" />
+    <Content Include="HAHelp.content" />
+    <Content Include="HAHelp.shfbproj" />
+    <Content Include="HAHelpTokens.tokens" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content.graphics\about.jpg" />
+    <Content Include="Content.graphics\anchor.jpg" />
+    <Content Include="Content.graphics\codeentity.jpg" />
+    <Content Include="Content.graphics\CreateExternalLink.jpg" />
+    <Content Include="Content.graphics\DeserializationFailed.jpg" />
+    <Content Include="Content.graphics\ExternalLinkClear.jpg" />
+    <Content Include="Content.graphics\ExternalLinkCopied.jpg" />
+    <Content Include="Content.graphics\ExternalLinkEmptyField.jpg" />
+    <Content Include="Content.graphics\ExternalLinkFromFile.jpg" />
+    <Content Include="Content.graphics\ExternalLinkNotCopied.jpg" />
+    <Content Include="Content.graphics\FileMenu.jpg" />
+    <Content Include="Content.graphics\FormattedLink.jpg" />
+    <Content Include="Content.graphics\GuidDoubled.jpg" />
+    <Content Include="Content.graphics\helpFile.jpg" />
+    <Content Include="Content.graphics\HelpMenu.jpg" />
+    <Content Include="Content.graphics\image.jpg" />
+    <Content Include="Content.graphics\IncorrectFile.jpg" />
+    <Content Include="Content.graphics\InfoDialog.jpg" />
+    <Content Include="Content.graphics\logo.jpg" />
+    <Content Include="Content.graphics\mainWindow.jpg" />
+    <Content Include="Content.graphics\OpenDialog.jpg" />
+    <Content Include="Content.graphics\OpenedProject.jpg" />
+    <Content Include="Content.graphics\ProjectReloaded.jpg" />
+    <Content Include="Content.graphics\smallLogo.jpg" />
+    <Content Include="Content.graphics\token.jpg" />
+    <Content Include="Content.graphics\topic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+</Project>

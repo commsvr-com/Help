@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="c2b18898-5664-4d7b-8159-ff3bbdc25dc0" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+    </introduction>
+
+    <section address="File_menu_options">
+      <title>Options from "File" menu</title>
+      <content>
+        <para>
+          After clicking on <link xlink:href="fdc5e656-6c76-46e8-b739-e164d4b1b22f#Starting"> “File” menu from the toolbar</link>   three menu elements appear:
+        </para>
+        <mediaLink>
+          <caption placement="after" lead="Figure">File menu</caption>
+          <image placement="center" xlink:href = "9198d4a4-d465-47a9-b262-ba2d856a8fe2"/>
+        </mediaLink>
+        <para>Controls in the File menu:</para>
+        <list class="ordered">
+          <listItem>
+            <para>
+              “Open project”. Clicking on this element causes opening “Open file” dialog.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              “Refresh”. Clicking on this element causes reloading the project.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              “Exit”.  Clicking on this element causes quitting the <token>app</token>.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+
+    <section address="Help_menu_options">
+      <title>Options from "Help" menu</title>
+      <content>
+        <para>After clicking on <link xlink:href="fdc5e656-6c76-46e8-b739-e164d4b1b22f#Starting"> “Help” menu from the toolbar</link> two menu elements appear:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure">Help menu</caption>
+          <image placement="center" xlink:href = "79b4866f-7a31-4c72-9665-15cbbb511657"/>
+        </mediaLink>
+        <para> Controls in the “Help” menu:</para>
+        <list class="ordered">
+          <listItem>
+            <para>
+              “Help”. Opens help file.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              “About”. Opens AboutBox with information about <token>app</token>.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+
+    <section address="After_clicking_Open">
+      <title>Open file dialog</title>
+      <content>
+        <para>After clicking “Open project” (1) from “File” menu - “Open file” dialog appears:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure">Open file dialog</caption>
+          <image placement="center" xlink:href = "892f3c10-2300-41ba-a557-4253f3c2868c"/>
+        </mediaLink>
+        <para>Controls in the “Open file” dialog:</para>
+        <list class="ordered">
+          <listItem>
+            <para> “Open”. Clicking this button opens the <token>SHFB</token> project file</para>
+          </listItem>
+          <listItem>
+            <para> “Cancel”. Clicking this button closes dialog.</para>
+          </listItem>
+        </list>
+        <para>After clicking “Open” it is possible, that the deserialization for some reasons is impossible. In this situation below dialog appears:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure">Deserialization failed</caption>
+          <image placement="center" xlink:href = "80075e6d-c3a5-4538-b6ef-42aabcc6e4b4"/>
+        </mediaLink>
+        <para>The next possible situation is when some identifiers (i.e. GUIDs) are doubled in the project. User can see below dialog:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure">GUID doubled</caption>
+          <image placement="center" xlink:href = "e9bfe52d-2471-4cdd-a2ad-cc923c3d23b9"/>
+        </mediaLink>
+      </content>
+    </section>
+
+    <section address="After_clicking_Refresh">
+      <title>Refresh</title>
+      <content>
+        <para>After clicking “Refresh” (2) from “File” menu, if there was not any project opened or the file was incorrect, the information appears:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure">Incorrect file</caption>
+          <image placement="center" xlink:href = "000c6591-a7a2-433e-aa74-8445c22d127c"/>
+        </mediaLink>
+      </content>
+    </section>
+
+    <section address="After_clicking_Help">
+      <title>Help</title>
+      <content>
+        <para>Next clickable element is “Help” from “Help” menu. After clicking it, appears help file.</para>
+<mediaLink>
+    <caption placement="after" lead="Figure">Help file</caption>
+    <image placement="center" xlink:href = "8f71966b-e563-4651-a861-7484624cc32c"/>
+</mediaLink>
+      </content>
+    </section>
+
+    <section address="After_clicking_About">
+      <title>About</title>
+      <content>
+        <para>After clicking on “About” appears window with information about <token>app</token>:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure">AboutBox</caption>
+          <image placement="center" xlink:href = "35b55749-5dd1-492d-af33-58c3eedbc374"/>
+        </mediaLink>
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

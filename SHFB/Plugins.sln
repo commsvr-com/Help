@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B751696E-4509-43B6-B0FB-E4C32E057438}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpTopicsCommand", "Plugins\HelpTopicsCommand\HelpTopicsCommand.csproj", "{7E80AF18-FC7C-4067-AD9C-3034914B2CC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpTopicsPlugin", "Plugins\HelpTopicsPlugin\HelpTopicsPlugin.csproj", "{8028D656-0229-46A7-9EDA-C10CDEBDE7D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopicsLibrary", "Plugins\TopicsLibrary\TopicsLibrary.csproj", "{8D532F2D-3F40-462A-917F-F7BFEC8B0ED0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpAssistant", "HelpTopicsLibraries\HelpAssistant\HelpAssistant.csproj", "{F1314E3F-65F6-4024-A31F-ACD8CA75550E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiteMapLibrary", "Plugins\SiteMapLibrary\SiteMapLibrary.csproj", "{57DA813F-65E2-4BD8-9603-AC30C1F24671}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpAssistant.Scripts", "..\Scripts\HelpAssistant.Scripts.csproj", "{E1FC0810-38EB-4EFF-A015-BEAF031DD987}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E80AF18-FC7C-4067-AD9C-3034914B2CC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E80AF18-FC7C-4067-AD9C-3034914B2CC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E80AF18-FC7C-4067-AD9C-3034914B2CC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E80AF18-FC7C-4067-AD9C-3034914B2CC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8028D656-0229-46A7-9EDA-C10CDEBDE7D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8028D656-0229-46A7-9EDA-C10CDEBDE7D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8028D656-0229-46A7-9EDA-C10CDEBDE7D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8028D656-0229-46A7-9EDA-C10CDEBDE7D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D532F2D-3F40-462A-917F-F7BFEC8B0ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D532F2D-3F40-462A-917F-F7BFEC8B0ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D532F2D-3F40-462A-917F-F7BFEC8B0ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D532F2D-3F40-462A-917F-F7BFEC8B0ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1314E3F-65F6-4024-A31F-ACD8CA75550E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1314E3F-65F6-4024-A31F-ACD8CA75550E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1314E3F-65F6-4024-A31F-ACD8CA75550E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1314E3F-65F6-4024-A31F-ACD8CA75550E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57DA813F-65E2-4BD8-9603-AC30C1F24671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57DA813F-65E2-4BD8-9603-AC30C1F24671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57DA813F-65E2-4BD8-9603-AC30C1F24671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57DA813F-65E2-4BD8-9603-AC30C1F24671}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1FC0810-38EB-4EFF-A015-BEAF031DD987}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1FC0810-38EB-4EFF-A015-BEAF031DD987}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1FC0810-38EB-4EFF-A015-BEAF031DD987}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1FC0810-38EB-4EFF-A015-BEAF031DD987}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="d2c653b6-334c-4ec7-a48f-dbe505121a48" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <introduction>
+      <para></para>
+    </introduction>
+    <section address="Welcome">
+      <title>
+        Welcome to the HelpAssistant!
+      </title>
+      <content>
+        <para>
+          Welcome to HelpAssistant! The main task of this tool is support of electronic documentation developers in the process of building documentation in MAML. The main function of the <token>app</token> is creating links to the elements of the <token>SHFB</token> project. These elements are images, topics, topics with anchors, tokens, code entities and external resources.
+        </para>
+      </content>
+    </section>
+    <section>
+      <title>
+        How does it work?
+      </title>
+      <content>
+        <para>
+          HelpAssistant is a very intuitive program. First step is an opening of the project (user can do this in “Open file” dialog). After opening the <token>SHFB</token> project (in MSBuild standard) is being deserialized by the XmlSerializer. This serializer is a built-in mechanism of C# so it is quicker than the serializers written by developers. The <token>app</token> reads from the project only those elements, which are useful (or might be useful in the future) for the <token>app</token>. In the next step, basing on the information from the project, HelpAssistant analyzes and get data from all MAML files, images, file with tokens, DLL’s and file with external links. All derived information are being shown to the user as a tree-view, similar to Visual Studio class view. Elements are grouped on the tree by its types.
+        </para>
+        <para>
+          In this moment user can choose particular element. After clicking with the left mouse button on the element, the link to this element is being copied to the system clipboard. Usually users are used to the open typical context menu under the right mouse button when they want to copy something, however in HelpAssistant the link is being copied just after clicking with the left button. This solution is two times quicker than the standard context menu, because user is clicking only once on the element (the context menu is unnecessary). The copied link can be in two forms: formatted with whitespaces or unformatted and written in one line. Obviously user can choose if the link should be formatted or not.
+        </para>
+        <para>
+          If after opening the project in HelpAssistant, user had made any changes in the project file (i.e. in <token>SHFB</token>) then, it is possible to refresh the project. After choosing the right option the project is being reloaded and the tree is being redrawn.
+        </para>
+        <para>
+          The next possibility for the user is creation of the external link. After filling all the gaps in the special form, the link is being created and copied to the system clipboard. If there is no link with the same name in the file with external links, then the link is being saved in the file. User can modify the file if they want. The file with external links is always in the folder, where HelpAssistant is installed.
+        </para>
+      </content>
+    </section> 
+    <relatedTopics>
+      <link xlink:href="3914f079-dba8-4d77-a3b8-011f480d3164">User interface</link>
+      <link xlink:href="fdc5e656-6c76-46e8-b739-e164d4b1b22f">Starting the application</link>
+      <link xlink:href="c2b18898-5664-4d7b-8159-ff3bbdc25dc0">Menu toolbar</link>
+      <link xlink:href="0990c311-5843-437e-95c8-8189a95dfa98">Analyze of the project</link>
+      <link xlink:href="dc759063-b846-4afd-b4af-7838e2a61336">Creating of the external link</link>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
+

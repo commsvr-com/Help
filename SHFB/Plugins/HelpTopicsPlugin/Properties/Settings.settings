@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="HelpTopicsPlugin.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="HelpDocumentationAllTopics" Type="System.String" Scope="User">
+      <Value Profile="(Default)">allTopics.xml</Value>
+    </Setting>
+    <Setting Name="HelpDocumentationWebTocNew" Type="System.String" Scope="User">
+      <Value Profile="(Default)">webTocNew.xml</Value>
+    </Setting>
+    <Setting Name="HelpDocumentationWebTocOld" Type="System.String" Scope="User">
+      <Value Profile="(Default)">webToc.xml</Value>
+    </Setting>
+    <Setting Name="HelpDocumentationWebTOC" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.commsvr.com/UAModelDesigner/WebTOC.xml</Value>
+    </Setting>
+    <Setting Name="SiteMapFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SiteMap.xml</Value>
+    </Setting>
+    <Setting Name="website" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.commsvr.com/UAModelDesigner/Index.aspx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="dc759063-b846-4afd-b4af-7838e2a61336" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <introduction>
+    </introduction>
+
+    <section address="Creating_of_the_external_link">
+      <title>Creating of the external link</title>
+      <content>
+        <para>To create an external link, the “Create external link” panel in main window (5) should be opened. It looks like below:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure">Create external link</caption>
+          <image placement="center" xlink:href = "e5b0863c-febd-48e5-9ed5-33e2125c9c77"/>
+        </mediaLink>
+        <para>Controls in “Creating external link” panel:</para>
+        <list class="ordered">
+          <listItem>
+            <para>
+              “Create” button after clicking copies the link in system clipboard and saves it in the file on hard drive.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              “Clear” button removes data from the fields: “Link text”, “Link alternate text”, “URI”.
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+
+
+    <section address="Clearing">
+      <title>Clear fields</title>
+      <content>
+        <para>After clicking the “Clear” button (2) all fields become empty:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure">Clear</caption>
+          <image placement="center" xlink:href = "030bc4b4-a5a7-4b54-bd12-76e11b7634a4"/>
+        </mediaLink>
+      </content>
+    </section>
+
+    <section address="After_clicking_create">
+      <title>After clicking the "Create" button</title>
+      <content>
+        <para>After clicking “Create” button, if the link was created properly for the first time, message box appears:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure">Link created properly and copied to the file</caption>
+          <image placement="center" xlink:href = "6a8527c8-c743-402f-be4d-c8baa69ad2bd"/>
+        </mediaLink>
+        <para>If the link is created second time, it will be created, but it will not be copied to the file:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure">Link created properly and not copied to the file</caption>
+          <image placement="center" xlink:href = "e3119ef7-9c78-4659-843d-ff27e4370ad8"/>
+        </mediaLink>
+        <para>There might be also the situation, when some of the fields are empty:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure">Empty field</caption>
+          <image placement="center" xlink:href = "fd1dcd48-7f4a-42a7-bf64-cf7ee5b552a9"/>
+        </mediaLink>
+      </content>
+    </section>
+
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
