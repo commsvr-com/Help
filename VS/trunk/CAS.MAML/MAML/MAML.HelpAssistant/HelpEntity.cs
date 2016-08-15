@@ -16,14 +16,35 @@
 //=============================================================================
 namespace HelpAssistant
 {
+  /// <summary>
+  /// Class HelpEntity.
+  /// </summary>
   public abstract class HelpEntity
   {
+    /// <summary>
+    /// Enum elementType
+    /// </summary>
     public enum elementType
     {
+      /// <summary>
+      /// The image
+      /// </summary>
       Image,
+      /// <summary>
+      /// The token
+      /// </summary>
       Token,
+      /// <summary>
+      /// The topic
+      /// </summary>
       Topic,
+      /// <summary>
+      /// The code entity
+      /// </summary>
       CodeEntity,
+      /// <summary>
+      /// The external link
+      /// </summary>
       ExternalLink,
     }
     /// <summary>

@@ -17,8 +17,8 @@ using System.Collections.Generic;
 using System.IO;
 using HelpAssistant;
 using HelpAssistant.HelpElementTypes;
-using TopicsLibrary;
 using SiteMapLibrary;
+using CAS.MAML.HelpTopics.Content;
 
 namespace HelpTopicsCommand
 {

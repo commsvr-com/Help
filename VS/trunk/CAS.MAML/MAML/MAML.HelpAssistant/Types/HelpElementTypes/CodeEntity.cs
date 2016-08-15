@@ -16,6 +16,10 @@
 
 namespace HelpAssistant.HelpElementTypes
 {
+  /// <summary>
+  /// Class CodeEntity.
+  /// </summary>
+  /// <seealso cref="HelpAssistant.HelpEntity" />
   public class CodeEntity: HelpEntity
   {
     private string codeEntityName;

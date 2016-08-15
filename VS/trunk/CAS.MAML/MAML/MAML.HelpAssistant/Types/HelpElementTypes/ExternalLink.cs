@@ -18,6 +18,10 @@ using System;
 
 namespace HelpAssistant.HelpElementTypes
 {
+  /// <summary>
+  /// Class ExternalLink.
+  /// </summary>
+  /// <seealso cref="HelpAssistant.HelpEntity" />
   public class ExternalLink: HelpEntity
   {
     private string linkText;

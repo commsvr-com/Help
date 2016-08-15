@@ -23,6 +23,9 @@ using System.Windows;
 
 namespace HelpAssistant
 {
+  /// <summary>
+  /// Class HelpContentCreator.
+  /// </summary>
   public class HelpContentCreator 
   {
     #region constructors

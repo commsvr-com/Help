@@ -17,7 +17,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Xml.Serialization;
 
-namespace TopicsLibrary
+namespace CAS.MAML.HelpTopics.Content
 {
   public partial class Topics
   {
@@ -51,15 +51,15 @@ namespace TopicsLibrary
       try
       {
         StreamReader reader = new StreamReader( stream );
-        Topics tpcs = null;
+        Topics _topics = null;
         using ( reader )
         {
           XmlSerializer xmlSerializer = new XmlSerializer( typeof( Topics ) );
-          tpcs = (Topics)xmlSerializer.Deserialize( reader );
+          _topics = (Topics)xmlSerializer.Deserialize( reader );
         }
-        if ( tpcs == null )
+        if ( _topics == null )
           return null;
-        return tpcs.CreateDictionary();
+        return _topics.CreateDictionary();
       }
       catch ( Exception )
       {

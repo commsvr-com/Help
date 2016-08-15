@@ -18,6 +18,10 @@ using System;
 
 namespace HelpAssistant.HelpElementTypes
 {
+  /// <summary>
+  /// Class Image.
+  /// </summary>
+  /// <seealso cref="HelpAssistant.HelpEntity" />
   public class Image: HelpEntity
   {
     private string imageName;

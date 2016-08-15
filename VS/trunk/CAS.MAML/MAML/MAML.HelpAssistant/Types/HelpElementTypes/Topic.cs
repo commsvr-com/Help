@@ -19,6 +19,10 @@ using System.Collections.Generic;
 
 namespace HelpAssistant.HelpElementTypes
 {
+  /// <summary>
+  /// Class Topic.
+  /// </summary>
+  /// <seealso cref="HelpAssistant.HelpEntity" />
   public class Topic: HelpEntity
   {
     private Guid topicsGuid;
