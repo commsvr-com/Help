@@ -16,14 +16,14 @@
 //=============================================================================
 
 
+using HelpAssistant;
+using HelpAssistant.HelpElementTypes;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Imaging;
-using HelpAssistant;
-using HelpAssistant.HelpElementTypes;
 
 namespace HelpAssistantGui
 {
@@ -40,7 +40,7 @@ namespace HelpAssistantGui
 
     #region Constructors
     /// <summary>
-    /// Initializes a new instance of the <see cref="Window1"/> class.
+    /// Initializes a new instance of the <see cref="HelpAssistantWindow"/> class.
     /// </summary>
     public HelpAssistantWindow()
     {
@@ -441,7 +441,7 @@ namespace HelpAssistantGui
     /// Handles the SelectedItemChanged event of the treeViewTree control.
     /// </summary>
     /// <param name="sender">The source of the event.</param>
-    /// <param name="e">The <see cref="System.Windows.RoutedPropertyChangedEventArgs&lt;System.Object&gt;"/> instance containing the event data.</param>
+    /// <param name="e">The <see cref="RoutedPropertyChangedEventArgs{Object}"/> instance containing the event data.</param>
     private void treeViewTree_SelectedItemChanged( object sender, RoutedPropertyChangedEventArgs<object> e )
     {
       if ( treeViewTree.SelectedItem == null )

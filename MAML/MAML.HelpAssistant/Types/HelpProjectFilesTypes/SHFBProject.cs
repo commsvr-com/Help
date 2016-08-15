@@ -2300,7 +2300,7 @@ namespace HelpAssistant.HPFT
     }
   }
 
-  /// <remarks/>
+  // /// <remarks/>
   //[System.CodeDom.Compiler.GeneratedCodeAttribute( "xsd", "2.0.50727.3038" )]
   //[System.SerializableAttribute()]
   //[System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2327,7 +2327,7 @@ namespace HelpAssistant.HPFT
   //  }
   //}
 
-  /// <remarks/>
+  // /// <remarks/>
   //[System.CodeDom.Compiler.GeneratedCodeAttribute( "xsd", "2.0.50727.3038" )]
   //[System.SerializableAttribute()]
   //[System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2454,7 +2454,7 @@ namespace HelpAssistant.HPFT
     /// <remarks/>
     NamingMethod,
 
-    /// <remarks/>
+    // /// <remarks/>
  //   PlugInConfigurations,
 
     /// <remarks/>

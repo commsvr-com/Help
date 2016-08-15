@@ -16,6 +16,10 @@
 
 namespace HelpAssistant.HelpElementTypes
 {
+  /// <summary>
+  /// Class Token.
+  /// </summary>
+  /// <seealso cref="HelpAssistant.HelpEntity" />
   public class Token: HelpEntity
   {
     private string tokenId;

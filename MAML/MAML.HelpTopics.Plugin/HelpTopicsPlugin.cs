@@ -12,22 +12,20 @@
 //  mailto://techsupp@cas.eu
 //  http://www.cas.eu
 //</summary>
+
 using System;
-using System.Text;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Xml.XPath;
-using System.Xml;
 using System.Windows.Forms;
 using HelpAssistant;
 using HelpAssistant.HelpElementTypes;
 using SandcastleBuilder.Utils;
 using SandcastleBuilder.Utils.BuildEngine;
 using SandcastleBuilder.Utils.PlugIn;
-using TopicsLibrary;
 using SiteMapLibrary;
-
+using CAS.MAML.HelpTopics.Content;
 
 namespace HelpTopicsPlugin
 {

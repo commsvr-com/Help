@@ -1,25 +1,31 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAML.Scripts", "..\Scripts\MAML.Scripts.csproj", "{E1FC0810-38EB-4EFF-A015-BEAF031DD987}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAML.Scripts", "Scripts\MAML.Scripts.csproj", "{E1FC0810-38EB-4EFF-A015-BEAF031DD987}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAML.HelpTopics.Content", "MAML.HelpTopics.Content\MAML.HelpTopics.Content.csproj", "{8D532F2D-3F40-462A-917F-F7BFEC8B0ED0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAML.HelpTopics.Content", "MAML\MAML.HelpTopics.Content\MAML.HelpTopics.Content.csproj", "{8D532F2D-3F40-462A-917F-F7BFEC8B0ED0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAML.SiteMap.Content", "MAML.SiteMap.Content\MAML.SiteMap.Content.csproj", "{57DA813F-65E2-4BD8-9603-AC30C1F24671}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAML.SiteMap.Content", "MAML\MAML.SiteMap.Content\MAML.SiteMap.Content.csproj", "{57DA813F-65E2-4BD8-9603-AC30C1F24671}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAML.HelpTopics.Plugin", "MAML.HelpTopics.Plugin\MAML.HelpTopics.Plugin.csproj", "{8028D656-0229-46A7-9EDA-C10CDEBDE7D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAML.HelpTopics.Plugin", "MAML\MAML.HelpTopics.Plugin\MAML.HelpTopics.Plugin.csproj", "{8028D656-0229-46A7-9EDA-C10CDEBDE7D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAML.HelpAssistant", "MAML.HelpAssistant\MAML.HelpAssistant.csproj", "{F1314E3F-65F6-4024-A31F-ACD8CA75550E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAML.HelpAssistant", "MAML\MAML.HelpAssistant\MAML.HelpAssistant.csproj", "{F1314E3F-65F6-4024-A31F-ACD8CA75550E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAML.HelpTopics.Command", "MAML.HelpTopics.Command\MAML.HelpTopics.Command.csproj", "{7E80AF18-FC7C-4067-AD9C-3034914B2CC5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAML.HelpTopics.Command", "MAML\MAML.HelpTopics.Command\MAML.HelpTopics.Command.csproj", "{7E80AF18-FC7C-4067-AD9C-3034914B2CC5}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "HelpAssistantSetup", "MAML.HelpAssistant.Setup\MAML.HelpAssistant.Setup.vdproj", "{87636843-DF0B-4C41-97B6-DE90EA706AAA}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "HelpAssistantSetup", "MAML\MAML.HelpAssistant.Setup\MAML.HelpAssistant.Setup.vdproj", "{87636843-DF0B-4C41-97B6-DE90EA706AAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAML.HelpAssistant.Guii", "MAML.HelpAssistant.Gui\MAML.HelpAssistant.Guii.csproj", "{2B5C241D-FFAE-4204-BBAC-2C92C6430675}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAML.HelpAssistant.Guii", "MAML\MAML.HelpAssistant.Gui\MAML.HelpAssistant.Guii.csproj", "{2B5C241D-FFAE-4204-BBAC-2C92C6430675}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAML.HelpAssistant.Documentation", "MAML.HelpAssistant.Documentation\MAML.HelpAssistant.Documentation.csproj", "{E7B51B22-2E47-4574-9EEE-CC3F1BE4567D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAML.HelpAssistant.Documentation", "MAML\MAML.HelpAssistant.Documentation\MAML.HelpAssistant.Documentation.csproj", "{E7B51B22-2E47-4574-9EEE-CC3F1BE4567D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{27A2E45D-F914-4F03-A148-9773045D9727}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMeFirst.txt = ReadMeFirst.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T4Definitions", "PR39-CommonResources\T4Definitions\T4Definitions.csproj", "{D506423B-BA21-49E6-8C3B-88A771CA444E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,8 +69,15 @@ Global
 		{E7B51B22-2E47-4574-9EEE-CC3F1BE4567D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7B51B22-2E47-4574-9EEE-CC3F1BE4567D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7B51B22-2E47-4574-9EEE-CC3F1BE4567D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D506423B-BA21-49E6-8C3B-88A771CA444E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D506423B-BA21-49E6-8C3B-88A771CA444E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D506423B-BA21-49E6-8C3B-88A771CA444E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D506423B-BA21-49E6-8C3B-88A771CA444E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D506423B-BA21-49E6-8C3B-88A771CA444E} = {27A2E45D-F914-4F03-A148-9773045D9727}
 	EndGlobalSection
 EndGlobal
