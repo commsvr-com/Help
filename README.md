@@ -1,4 +1,4 @@
- # How to create environment for Sandcastle Help File Builder:
+# How to create environment for Sandcastle Help File Builder:
 
 ## Preface
 
@@ -33,4 +33,4 @@ Those library files can be found in `VS_Trunk\EX02-MAML\SHFB\Plugins\HelpTopicsP
 
 ## See also
 
-- [On-line help](https://commsvr-com.github.io/Help/Help/html/d2c653b6-334c-4ec7-a48f-dbe505121a48.htm)
+* [On-line help](https://commsvr-com.github.io/SHFB.HelpAssistant/Help/index.html)

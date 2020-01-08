@@ -20,21 +20,21 @@
     <ComponentConfigurations>
       <ComponentConfig id="Code Block Component" enabled="True">
         <component id="Code Block Component">
-  <basePath value="{@HtmlEncProjectFolder}" />
-  <outputPaths>{@HelpFormatOutputPaths}</outputPaths>
-  <allowMissingSource value="false" />
-  <removeRegionMarkers value="false" />
-  <colorizer syntaxFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.xml" styleFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.xsl" stylesheet="{@SHFBFolder}PresentationStyles\Colorizer\highlight.css" scriptFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.js" disabled="{@DisableCodeBlockComponent}" language="cs" tabSize="0" numberLines="false" outlining="false" keepSeeTags="false" defaultTitle="true" />
-</component>
+          <basePath value="{@HtmlEncProjectFolder}" />
+          <outputPaths>{@HelpFormatOutputPaths}</outputPaths>
+          <allowMissingSource value="false" />
+          <removeRegionMarkers value="false" />
+          <colorizer syntaxFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.xml" styleFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.xsl" stylesheet="{@SHFBFolder}PresentationStyles\Colorizer\highlight.css" scriptFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.js" disabled="{@DisableCodeBlockComponent}" language="cs" tabSize="0" numberLines="false" outlining="false" keepSeeTags="false" defaultTitle="true" />
+        </component>
       </ComponentConfig>
     </ComponentConfigurations>
-    <CopyrightHref>http://www.codeplex.com/HelpAssistant</CopyrightHref>
-    <CopyrightText>Copyright 2009, Jakub Budzynski, All rights reserved</CopyrightText>
-    <FeedbackEMailAddress>jkbudzynski%40gmail.com</FeedbackEMailAddress>
-    <FeedbackEMailLinkText>Jakub Budzynski</FeedbackEMailLinkText>
+    <CopyrightHref>https://github.com/commsvr-com/SHFB.HelpAssistant/blob/master/LICENSE</CopyrightHref>
+    <CopyrightText>Copyright %28c%29 2020 CommServer</CopyrightText>
+    <FeedbackEMailAddress>firma.cas%40gmail.com</FeedbackEMailAddress>
+    <FeedbackEMailLinkText>CommServer Team</FeedbackEMailLinkText>
     <FooterText>This documentation is designed to be used with HelpAssistant</FooterText>
-    <HeaderText>HelpAssistant</HeaderText>
-    <HelpTitle>HelpAssistant</HelpTitle>
+    <HeaderText>&amp;lt%3ba href=&amp;quot%3bhttps://github.com/commsvr-com/SHFB.HelpAssistant&amp;quot%3b&amp;gt%3bView the Project on GitHub &amp;lt%3bsmall&amp;gt%3bcommsvr-com/SHFB.HelpAssistant&amp;lt%3b/small&amp;gt%3b&amp;lt%3b/a&amp;gt%3b</HeaderText>
+    <HelpTitle>Sandcastle Help File Builder HelpAssistant</HelpTitle>
     <NamingMethod>MemberName</NamingMethod>
     <WorkingPath>
     </WorkingPath>
@@ -56,6 +56,13 @@
     <SaveComponentCacheCapacity>100</SaveComponentCacheCapacity>
     <WarnOnMissingSourceContext>False</WarnOnMissingSourceContext>
     <BuildLogFile>bin\build.log</BuildLogFile>
+    <HelpFileVersion>1.0.</HelpFileVersion>
+    <Language>en-US</Language>
+    <ContentPlacement>AboveNamespaces</ContentPlacement>
+    <RootNamespaceContainer>False</RootNamespaceContainer>
+    <NamespaceGrouping>False</NamespaceGrouping>
+    <MaximumGroupParts>2</MaximumGroupParts>
+    <SdkLinkTarget>Blank</SdkLinkTarget>
   </PropertyGroup>
   <!-- There are no properties for these two groups but they need to appear in
        order for Visual Studio to perform the build. -->
