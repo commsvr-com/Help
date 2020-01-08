@@ -1,5 +1,7 @@
  # How to create environment for Sandcastle Help File Builder:
 
+## Preface
+
 1. Install Sandcastle (newest version can be downloaded from [here](http://sandcastle.codeplex.com) or `\\Hq.cas.com.pl\cas_dfs\Public\FTP\SandcastleBuilder\Sandcastle.msi`
 1. Install SandcastleStyles: it can be found [here](http://sandcastlestyles.codeplex.com/) or `\\Hq.cas.com.pl\cas_dfs\Public\FTP\SandcastleBuilder\`
 1. Install SHFB (newest version can be downloaded from [here](http://shfb.codeplex.com) or `\\Hq.cas.com.pl\cas_dfs\Public\FTP\SandcastleBuilder\`
@@ -28,3 +30,7 @@ Those library files can be found in `VS_Trunk\EX02-MAML\SHFB\Plugins\HelpTopicsP
 
 4. In Project Properties in SHFB, PlugInConfigurations window, choose HelpTopicsPlugin and add it.
 1. Build the project- the allTopics.xml and SiteMap.xml file will be located in the project folder.
+
+## See also
+
+- [On-line help](https://commsvr-com.github.io/Help/Help/html/d2c653b6-334c-4ec7-a48f-dbe505121a48.htm)
