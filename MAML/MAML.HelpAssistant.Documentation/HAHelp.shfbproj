@@ -32,8 +32,10 @@
     <CopyrightText>Copyright %28c%29 2020 CommServer</CopyrightText>
     <FeedbackEMailAddress>firma.cas%40gmail.com</FeedbackEMailAddress>
     <FeedbackEMailLinkText>CommServer Team</FeedbackEMailLinkText>
-    <FooterText>This documentation is designed to be used with HelpAssistant</FooterText>
-    <HeaderText>&amp;lt%3ba href=&amp;quot%3bhttps://github.com/commsvr-com/SHFB.HelpAssistant&amp;quot%3b&amp;gt%3bView the Project on GitHub &amp;lt%3bsmall&amp;gt%3bcommsvr-com/SHFB.HelpAssistant&amp;lt%3b/small&amp;gt%3b&amp;lt%3b/a&amp;gt%3b</HeaderText>
+    <FooterText>This documentation is designed to be used with HelpAssistant 
+&amp;lt%3ba href=&amp;quot%3bhttps://github.com/commsvr-com/SHFB.HelpAssistant&amp;quot%3b&amp;gt%3bView the Project on GitHub&amp;lt%3b/a&amp;gt%3b</FooterText>
+    <HeaderText>
+    </HeaderText>
     <HelpTitle>Sandcastle Help File Builder HelpAssistant</HelpTitle>
     <NamingMethod>MemberName</NamingMethod>
     <WorkingPath>
