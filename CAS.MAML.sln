@@ -25,6 +25,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "T4Definitions", "T4Definitions\T4Definitions.csproj", "{D506423B-BA21-49E6-8C3B-88A771CA444E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,9 +69,16 @@ Global
 		{E7B51B22-2E47-4574-9EEE-CC3F1BE4567D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7B51B22-2E47-4574-9EEE-CC3F1BE4567D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7B51B22-2E47-4574-9EEE-CC3F1BE4567D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D506423B-BA21-49E6-8C3B-88A771CA444E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D506423B-BA21-49E6-8C3B-88A771CA444E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D506423B-BA21-49E6-8C3B-88A771CA444E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D506423B-BA21-49E6-8C3B-88A771CA444E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D506423B-BA21-49E6-8C3B-88A771CA444E} = {27A2E45D-F914-4F03-A148-9773045D9727}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FE20AE85-5D14-47B7-9249-FBCAC120814D}
