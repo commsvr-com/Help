@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="fdc5e656-6c76-46e8-b739-e164d4b1b22f" revisionNumber="1">
+  <developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <summary>
+    </summary>
+    <introduction>
+    </introduction>
+    <section address="Starting">
+      <title>Starting</title>
+      <content>
+        <para>After starting the <token>app</token>, on the screen appears splash screen:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure">Logo</caption>
+          <image placement="center" xlink:href = "0c9512e4-f88f-459b-982b-b46ff063ed29"/>
+        </mediaLink>
+        <para>Then appears the main window:</para>
+        <mediaLink>
+          <caption placement="after" lead="Figure">Main window</caption>
+          <image placement="center" xlink:href = "69068e75-3086-4c33-b054-4ffcc92be6ab"/>
+        </mediaLink>
+        <para>Controls in the main window:</para>
+        <list class="ordered">
+          <listItem>
+            <para>
+              TreeView panel, where all <token>SHFB</token> project elements are shown
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Information panel, where information about help element (image, code entity, external link, token, topic) are shown.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Checkbox (FormattedLink), if the box is checked, the link will be in formatted form.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Menu bar with “File” menu and “Help” menu.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              External link panel, where external links can be created.
+            </para>
+          </listItem>
+        </list>  
+      </content>
+    </section>
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stockSharedContentDefinitions>
+  <item id="42E37596-3402-48c8-BA43-8469CA01523C">
+    <image file="topic.jpg">
+      <altText>Create topic link</altText>
+    </image>
+  </item>
+  <item id="70A5A3A4-6336-4ff1-A338-F64E6F2CC59D">
+    <image file="token.jpg">
+      <altText>Create token link</altText>
+    </image>
+  </item>
+  <item id="FE9E17D6-1915-4864-972E-EF33C97475A9">
+    <image file="ProjectReloaded.jpg">
+      <altText>Project refreshed</altText>
+    </image>
+  </item>
+  <item id="3D78AE01-C706-409b-AD52-C20FB5049709">
+    <image file="OpenedProject.jpg">
+      <altText>Opened project</altText>
+    </image>
+  </item>
+  <item id="892F3C10-2300-41ba-A557-4253F3C2868C">
+    <image file="OpenDialog.jpg">
+      <altText>Open file dialog</altText>
+    </image>
+  </item>
+  <item id="69068E75-3086-4c33-B054-4FFCC92BE6AB">
+    <image file="mainWindow.jpg">
+      <altText>Main window</altText>
+    </image>
+  </item>
+  <item id="0C9512E4-F88F-459b-982B-B46FF063ED29">
+    <image file="logo.jpg">
+      <altText>Logo</altText>
+    </image>
+  </item>
+  <item id="551DE609-28BC-4d53-940A-A905F990CF5E">
+    <image file="InfoDialog.jpg">
+      <altText>Info dialog</altText>
+    </image>
+  </item>
+  <item id="000C6591-A7A2-433e-AA74-8445C22D127C">
+    <image file="IncorrectFile.jpg">
+      <altText>Incorrect file</altText>
+    </image>
+  </item>
+  <item id="5345FE8F-1D20-4117-B498-DBC2BD176EC2">
+    <image file="image.jpg">
+      <altText>Image</altText>
+    </image>
+  </item>
+  <item id="79B4866F-7A31-4c72-9665-15CBBB511657">
+    <image file="HelpMenu.jpg">
+      <altText>Help menu</altText>
+    </image>
+  </item>
+  <item id="E9BFE52D-2471-4cdd-A2AD-CC923C3D23B9">
+    <image file="GuidDoubled.jpg">
+      <altText>GUID doubled</altText>
+    </image>
+  </item>
+  <item id="07ECC999-3BD2-4bf3-BC20-6909D1CE3768">
+    <image file="FormattedLink.jpg">
+      <altText>Formatted link</altText>
+    </image>
+  </item>
+  <item id="9198D4A4-D465-47a9-B262-BA2D856A8FE2">
+    <image file="FileMenu.jpg">
+      <altText>File menu</altText>
+    </image>
+  </item>
+  <item id="E3119EF7-9C78-4659-843D-FF27E4370AD8">
+    <image file="ExternalLinkNotCopied.jpg">
+      <altText>Link not copied</altText>
+    </image>
+  </item>
+  <item id="FD1DCD48-7F4A-42a7-BF64-CF7EE5B552A9">
+    <image file="ExternalLinkEmptyField.jpg">
+      <altText>Empty field</altText>
+    </image>
+  </item>
+  <item id="6A8527C8-C743-402f-BE4D-C8BAA69AD2BD">
+    <image file="ExternalLinkCopied.jpg">
+      <altText>Copied link</altText>
+    </image>
+  </item>
+  <item id="030BC4B4-A5A7-4b54-BD12-76E11B7634A4">
+    <image file="ExternalLinkClear.jpg">
+      <altText>Clear</altText>
+    </image>
+  </item>
+  <item id="FCF04A38-3F54-435e-BA17-403A82739231">
+    <image file="ExternalLinkFromFile.jpg">
+      <altText>External link</altText>
+    </image>
+  </item>
+  <item id="80075E6D-C3A5-4538-B6EF-42AABCC6E4B4">
+    <image file="DeserializationFailed.jpg">
+      <altText>Deserialization failed</altText>
+    </image>
+  </item>
+  <item id="E5B0863C-FEBD-48e5-9ED5-33E2125C9C77">
+    <image file="CreateExternalLink.jpg">
+      <altText>Create external link</altText>
+    </image>
+  </item>
+  <item id="A351ED25-4E28-4629-B865-D495BDBDB244">
+    <image file="codeentity.jpg">
+      <altText>Code entity link</altText>
+    </image>
+  </item>
+  <item id="76F49235-80DA-4986-864E-21E431C06E07">
+    <image file="anchor.jpg">
+      <altText>Topic with anchor link</altText>
+    </image>
+  </item>
+  <item id="35B55749-5DD1-492d-AF33-58C3EEDBC374">
+    <image file="about.jpg">
+      <altText>AboutBox</altText>
+    </image>
+  </item>
+  <item id="8F71966B-E563-4651-A861-7484624CC32C">
+    <image file="helpFile.jpg">
+      <altText>Help file</altText>
+    </image>
+  </item>
+</stockSharedContentDefinitions>
